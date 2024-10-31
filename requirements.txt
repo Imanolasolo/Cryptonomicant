@@ -1,5 +1,2 @@
 streamlit
-sqlite3
-webbrowser
 pandas
-base64
