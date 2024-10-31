@@ -69,7 +69,7 @@ def main():
             if add_user_button:
                 add_user(new_username, new_password, new_role, new_email, new_whatsapp)
                 st.success(f"Usuario {new_username} agregado.")
-                st.experimental_rerun()  # Recargar la página
+                st.rerun()  # Recargar la página
 
     elif menu == "Editar Usuario":
         st.write("### Editar Usuario")
@@ -89,7 +89,7 @@ def main():
                     if update_user_button:
                         update_user(edit_user_id, edit_username, edit_password, edit_role_select)
                         st.success(f"Usuario {edit_username} actualizado.")
-                        st.experimental_rerun()  # Recargar la página
+                        st.rerun()  # Recargar la página
         else:
             st.warning("No hay usuarios para editar.")
 
@@ -102,7 +102,7 @@ def main():
                 if st.button(f"Eliminar {user_to_delete[1]}"):
                     delete_user(user_to_delete[0])
                     st.success(f"Usuario {user_to_delete[1]} eliminado.")
-                    st.experimental_rerun()  # Recargar la página
+                    st.rerun()  # Recargar la página
         else:
             st.warning("No hay usuarios para eliminar.")
 
@@ -112,7 +112,7 @@ def main():
         for key in list(st.session_state.keys()):
             del st.session_state[key]  # Elimina la sesión actual
         st.success("Cierre de sesión exitoso. Por favor inicie sesión de nuevo.")
-        st.experimental_rerun()  # Recargar para redirigir a la página de inicio de sesión
+        st.rerun()  # Recargar para redirigir a la página de inicio de sesión
 
 if __name__ == "__main__":
     main()
