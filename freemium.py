@@ -25,7 +25,7 @@ def freemium_page():
    # Enlace para ir a la Calculadora de Inversiones
     st.markdown(
         """
-        <a href="/investment_calculator" style="font-size: 18px; color: blue; text-decoration: underline;">
+        <a href="https://cryptonomicant-calculator-investment.streamlit.app/" style="font-size: 18px; color: red; text-decoration: underline;">
             Ir a la Calculadora de Inversiones
         </a>
         """,
