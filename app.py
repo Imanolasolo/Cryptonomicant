@@ -134,7 +134,7 @@ def main():
             st.session_state["username"] = username
             st.session_state["first_login"] = first_login
             show_message(f"Inicio de sesión exitoso como {role}.")
-            st.experimental_rerun()
+            st.rerun()
         else:
             show_message("Usuario o contraseña incorrectos.", message_type='error')
 
