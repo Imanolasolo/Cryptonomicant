@@ -32,6 +32,16 @@ def freemium_page():
         unsafe_allow_html=True
     )
 
+    # Enlace para ir al Manager de proyectos
+    st.markdown(
+        """
+        <a href="https://cryptonomicant-investment-manager.streamlit.app/" style="font-size: 18px; color: red; text-decoration: underline;">
+            Ir al Manager de proyectos
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+
     # Call to action para que el usuario se mantenga enganchado
     st.markdown("""
     ### ¿Listo para llevar tu conocimiento al siguiente nivel?
